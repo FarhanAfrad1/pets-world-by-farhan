@@ -1,38 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/logo-footer.png"
+      type="image/x-icon"
+    />
     <title>Pets world</title>
     <!-- tailwind -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
     <!-- daisy-ui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.5/daisyui.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.5/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- adlam display and sora fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awsome -->
+    <script
+      src="https://kit.fontawesome.com/f119302c59.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- custom css for tailwind -->
     <style type="text/tailwindcss">
-        @theme {
-          --font-adlam:"ADLaM Display", serif;
-          --font-sora:"Sora", serif;
-        }
-      </style>
-</head>
-<body>
-    <header>
-
+      @theme {
+        --font-adlam: "ADLaM Display", serif;
+        --font-sora: "Sora", serif;
+        --color-flavescent:#F9DF8A;
+        --color-floral-White:#FFF9F4;
+        --color-btn-accent:#FFDC26;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-floral-White shadow-sm">
+      <div class="flex justify-between flex-row-reverse md:flex-row items-center py-2 md:py-8 bg-floral-White font-sora max-w-7xl mx-auto">
+        <div class="w-full md:w-fit flex justify-between">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Find a pet</a></li>
+              <li><a>Breeds</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">
+            <img src="assets/logo-header.png" alt="">
+            <span class="hidden md:flex">Browse<span class="text-btn-accent">4</span>Pets</span>
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-xl">
+            <li><a>Find a pet</a></li>
+            <li><a>Breeds</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+        <div class="space-x-3 hidden md:flex justify-center items-center">
+            <i class="fa-regular fa-bell text-2xl"></i>
+            <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+            <a class="btn bg-white rounded-lg border border-btn-accent px-7.5 py-2.5 text-xl">Login</a>
+            <a class="btn bg-btn-accent rounded-lg border-0 px-7.5 py-2.5 text-xl">Register</a>
+        </div>
+      </div>
     </header>
-    <main>
-
-    </main>
-    <footer>
-        
-    </footer>
-</body>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
