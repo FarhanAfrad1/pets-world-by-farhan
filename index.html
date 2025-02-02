@@ -96,7 +96,7 @@
       <section class="max-w-7xl mx-auto mt-10 md:mt-19">
         <!-- banner section -->
         <section
-          class="bg-[url(./assets/cat-big.png)] font-adlam mb-20 px-4 bg-contain bg-no-repeat bg-bottom animate-pulse"
+          class="bg-[url(./assets/cat-big.png)] font-adlam mb-20 px-4 bg-contain bg-no-repeat bg-bottom"
         >
           <div class="pb-40 md:pb-96">
             <h2 class="text-3xl md:text-[56px]">
@@ -215,7 +215,7 @@
       </section>
 
       <!-- main section middle part -->
-      <section class="bg-floral-White mt-32 py-32">
+      <section class="bg-floral-White mt-16 md:mt-32 py-20 md:py-32">
         <!-- trending pet product -->
         <section class="max-w-7xl mx-auto">
           <div class="px-4">
@@ -241,7 +241,7 @@
                 <img
                   src="assets/cute-pet-small.png"
                   alt=""
-                  class="absolute bottom-0 right-0"
+                  class="absolute bottom-0 right-0 animate-bounce"
                 />
               </div>
               <!-- small cards -->
@@ -450,7 +450,7 @@
         </section>
       </section>
       <!-- main section last part -->
-      <section class="max-w-7xl mx-auto px-4">
+      <section class="max-w-7xl mx-auto px-4 mt-10">
         <h2 class="font-adlam text-4xl mb-12">Everyday low Price</h2>
         <div class="flex flex-col md:flex-row gap-6">
           <!-- left card -->
@@ -488,6 +488,25 @@
             </div>
           </div>
         </div>
+        <!-- frequently asked question section section -->
+        <section class="max-w-7xl mx-auto mt-10 md:mt-19 px-4">
+          <h2 class="font-adlam text-4xl mb-12">Frequently Asked question</h2>
+          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title font-sora font-medium md:text-2xl">What types of pet products are available?</div>
+            <div class="collapse-content text-sm font-sora">We offer a wide range of pet products, including food, toys, grooming supplies, and clothing for cats and dogs. Browse categories to find the perfect item for your furry friend!</div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-sora font-medium md:text-2xl">How can I stay updated on pet deals and tips?</div>
+            <div class="collapse-content text-sm font-sora">You can subscribe to our newsletter by entering your email in the "Get Pawsome News!" section. You'll receive exclusive discounts, training tips, and product updates.</div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-sora font-medium md:text-2xl">Do you offer special discounts or deals?</div>
+            <div class="collapse-content text-sm font-sora">Yes! Check out our "Everyday Low Price" section for budget-friendly pet essentials. We also run seasonal sales and promotions, so stay tuned!</div>
+          </div>
+        </section>
       </section>
     </main>
     <footer class="bg-[#FFDC2680] pt-[370px] pb-[140px] relative mt-80">
@@ -529,19 +548,36 @@
         </div>
       </div>
       <!-- image with input box -->
-      <div class="max-w-7xl mx-auto px-4 bg-floral-White rounded-lg md:rounded-2xl absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 md:w-full">
+      <div
+        class="max-w-7xl mx-auto px-4 bg-floral-White rounded-lg md:rounded-2xl absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 md:w-full"
+      >
         <div class="py-8 md:py-[38px] md:px-[90px]">
           <div class="flex items-center flex-col lg:flex-row gap-8 md:gap-28">
             <img
               src="assets/cute-pet-mid.png"
-              class="max-w-sm rounded-lg h-60 md:h-fit" />
+              class="max-w-sm rounded-lg h-60 md:h-fit"
+            />
             <div class="flex flex-col items-center md:items-start">
-              <h2 class="font-adlam text-[22px] md:text-4xl mb-3 md:mb-5">Get Pawsome News!</h2>
-              <p class="font-sora text-base md:text-xl text-center md:text-center">
+              <h2 class="font-adlam text-[22px] md:text-4xl mb-3 md:mb-5">
+                Get Pawsome News!
+              </h2>
+              <p
+                class="font-sora text-base md:text-xl text-center md:text-center"
+              >
                 Exclusive training tips, ticks, product deals and more.
               </p>
-              <input type="email" name="" id="" class="my-5 md:my-9 bg-white p-2 md:p-4 border-0  rounded-md md:rounded-lg w-full" placeholder="Enter email....">
-              <button class="btn bg-btn-accent rounded-lg border-0 md:px-7.5 py-2.5 text-sm md:text-xl w-[120px] md:w-[164px]">Get Started</button>
+              <input
+                type="email"
+                name=""
+                id=""
+                class="my-5 md:my-9 bg-white p-2 md:p-4 border-0 rounded-md md:rounded-lg w-full"
+                placeholder="Enter email...."
+              />
+              <button
+                class="btn bg-btn-accent rounded-lg border-0 md:px-7.5 py-2.5 text-sm md:text-xl w-[120px] md:w-[164px]"
+              >
+                Get Started
+              </button>
             </div>
           </div>
         </div>
